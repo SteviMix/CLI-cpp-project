@@ -1,0 +1,59 @@
+cmake_minimum_required(VERSION 4.2)
+project(projekat_za_slanje_2)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(AbstractClasses)
+include_directories(Commands)
+include_directories(InputStreams)
+include_directories(Main)
+include_directories(OutputStreams)
+
+add_executable(projekat_za_slanje_2
+        AbstractClasses/Command.h
+        AbstractClasses/CommandError.h
+        AbstractClasses/InputStream.h
+        AbstractClasses/OutputStream.h
+        Commands/DateCommand.cpp
+        Commands/DateCommand.h
+        Commands/EchoCommand.cpp
+        Commands/EchoCommand.h
+        Commands/TimeCommand.cpp
+        Commands/TimeCommand.h
+        Commands/TouchCommand.cpp
+        Commands/TouchCommand.h
+        Commands/WCCommand.cpp
+        Commands/WCCommand.h
+        InputStreams/ConsoleInputStream.cpp
+        InputStreams/ConsoleInputStream.h
+        InputStreams/FileInputStream.cpp
+        InputStreams/FileInputStream.h
+        InputStreams/StringInputStream.cpp
+        InputStreams/StringInputStream.h
+        Main/Interpreter.cpp
+        Main/Interpreter.h
+        Main/Parser.cpp
+        Main/Parser.h
+        Main/Reader.cpp
+        Main/Reader.h
+        OutputStreams/ConsoleOutputStream.cpp
+        OutputStreams/ConsoleOutputStream.h
+        main.cpp
+        Types.h
+        OutputStreams/FileOutputStream.cpp
+        OutputStreams/FileOutputStream.h
+        OutputStreams/StringOutputStream.cpp
+        OutputStreams/StringOutputStream.h
+        Commands/PromptCommand.cpp
+        Commands/PromptCommand.h
+        Commands/TruncateCommand.cpp
+        Commands/TruncateCommand.h
+        Commands/RMCommand.cpp
+        Commands/RMCommand.h
+        Commands/HeadCommand.cpp
+        Commands/HeadCommand.h
+        Commands/TRCommand.cpp
+        Commands/TRCommand.h
+        Commands/BatchCommand.cpp
+        Commands/BatchCommand.h)
