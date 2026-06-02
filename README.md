@@ -40,4 +40,10 @@ The interpreter supports the following commands:
 3. Run the executable:
    ./cli_interpreter
 
+## Available Tests
+The repository includes automated test cases and verification files to ensure the interpreter's stability and correctness:
+- **`javni_test.pdf`**: Official public test specification containing formal verification scenarios and expected behavior.
+- **Test Scripts & Inputs**: Standardized evaluation files  used to validate edge cases, command chaining, piping, and stream redirection.
+
+
 Project developed for the Object-Oriented Programming course (2025/2026).
