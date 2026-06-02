@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 4.2)
-project(projekat_za_slanje_2)
+project(cli_interpreter)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -10,7 +10,7 @@ include_directories(InputStreams)
 include_directories(Main)
 include_directories(OutputStreams)
 
-add_executable(projekat_za_slanje_2
+add_executable(cli_interpreter
         AbstractClasses/Command.h
         AbstractClasses/CommandError.h
         AbstractClasses/InputStream.h
